@@ -9,7 +9,8 @@ import (
 func Init() {
 	router := echo.New()
 
-	// Middleware
+	// Middlewareの文法がRailsのサーバーの基幹部に使用されている「Rack」に似てる
+	// Railsの知識が生きた
   router.Use(middleware.Logger())
   router.Use(middleware.Recover())
 
